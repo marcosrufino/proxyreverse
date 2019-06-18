@@ -1,0 +1,8 @@
+rest_spring:
+  ribbon:
+    listOfServers: localhost:9090, localhost:9091
+
+zuul:
+  routes:
+    rest_spring: /**
+  sensitive-headers:
